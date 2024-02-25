@@ -20,8 +20,8 @@ async function run() {
     const prompt = "Describe these pictures in a few sentences.";
 
     const imageParts = [
-        fileToGenerativePart("icon-020202.png", "image/png"),
-        fileToGenerativePart("IMG_1597.jpg", "image/jpeg"),
+        fileToGenerativePart("bball.jpg", "image/jpeg"),
+        fileToGenerativePart("pray.jpg", "image/jpeg"),
     ];
     const result = await model.generateContent([prompt, ...imageParts]);
     const response = await result.response;
